@@ -1,0 +1,80 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #e80070;
+    margin: 0;
+}
+
+form {
+    width: 400px;
+    padding: 16px 24px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    margin: 8px 0 16px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #f0f8ff;
+    background-color: #f0f8ff;
+}
+
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+select {
+    margin: 8px 0 16px 0;
+    padding: 12px;
+    border-radius: 5px;
+    appearance: none;
+    border: 1px solid #f0f8ff;
+    background-color: #f0f8ff;
+}
+
+input:hover, select:hover {
+    border: 1px solid #e80070;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translate(0, -50%);
+}
+
+select:hover + i {
+    color: #e80070;
+}
+
+button {
+    margin: 8px 0 16px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #e80070;
+    background-color: #e80070;
+    color: white;
+}
+
+button:hover {
+    border: 1px solid #40e0d0;
+    background-color: #40e0d0;
+}
